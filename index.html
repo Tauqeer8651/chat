@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iChat - Live Chatting</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+</head>
+<body>
+    <h1>iChat</h1>
+
+    <nav class="Nav" id="navigation">
+        <img class="logo" src="chat.png" alt="iChat"> 
+    </nav>  
+
+    
+ <b>Online</b>
+    <div class="container">
+       
+        <div class="message-right"> Tiger : HLLo </div>
+        <div class="message-left"> Jimmi : Hiii </div>
+
+    </div>
+    <div class="send">
+        <form action="#"  id="send-container">
+            <input type="text" id="messageInp" placeholder="Enter your message" required>
+             <button  class="btn" type="submit" ><i class="fa fa-paper-plane" aria-hidden="true"></i>
+            </button>
+        </form>
+    </div>
+
+    <p>&copy; 2024 iChat. All rights reserved.</p>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="nodeserver/server.js"></script>
+    <script src="js/client.js"></script>
+
+</body>
+</html>
